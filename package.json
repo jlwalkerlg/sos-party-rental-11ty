@@ -1,0 +1,14 @@
+{
+  "name": "sos-party-rental-11ty",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "dotenv": "^16.4.7"
+  }
+}

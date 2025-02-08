@@ -1,0 +1,56 @@
+---
+page_id: our_story
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="{{ meta.title }}">
+    <meta name="description" content="{{ meta.description }}">
+    <meta name="keywords" content="{{ meta.keywords }}">
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="stylesheet" href="/our-story.css">
+
+    <!-- JS -->
+    <script src="/shared.js" defer></script>
+</head>
+
+<body>
+    {% include "components/nav.njk" %}
+
+    <main class="section about-me-section">
+        <div class="container about-me-container">
+            <h1 class="h1 about-me-heading">{{ heading }}</h1>
+
+            <img class="border-radius-shadow-img" src="/images/about-me-img.png"
+                alt="{{ img }}">
+
+            <div class="about-me-info">
+                {% for paragraph in paragraphs %}
+                <p class="subheading">{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+
+    {% include "components/footer.njk" %}
+    {% include "components/whatsapp-button.njk" %}
+</body>
+
+</html>

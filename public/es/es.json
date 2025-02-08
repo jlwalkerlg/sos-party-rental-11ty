@@ -1,0 +1,27 @@
+{
+  "lang": "es",
+  "nav": {
+    "logo": "Logo de SOS Party Rental",
+    "services": "Servicios",
+    "catalog": "Catálogo",
+    "gallery": "Galería",
+    "our_story": "Historia",
+    "contact": "Contacto",
+    "cta": "Escríbenos"
+  },
+  "i18n": {
+    "monday": "Lunes",
+    "tuesday": "Martes",
+    "wednesday": "Miércoles",
+    "thursday": "Jueves",
+    "friday": "Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "see_more": "Ver más",
+    "see_catalog": "Ver catálogo",
+    "open_menu": "Abrir menú",
+    "close_menu": "Cerrar menú",
+    "contact_us": "Contáctanos",
+    "website_by": "Sitio web de"
+  }
+}
