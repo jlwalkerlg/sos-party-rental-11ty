@@ -62,6 +62,7 @@ body.show-mobile-nav {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* reset buttons */
@@ -215,6 +216,7 @@ button,
 }
 
 .site-nav-logo {
+  width: auto;
   height: 86px;
 }
 

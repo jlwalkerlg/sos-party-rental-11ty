@@ -39,7 +39,7 @@ page_id: our_story
             <h1 class="h1 about-me-heading">{{ heading }}</h1>
 
             <img class="border-radius-shadow-img" src="/images/about-me-img.png"
-                alt="{{ img }}">
+                alt="{{ img }}" sizes="(min-width: 1000px) 968px, 100vw" loading="eager" decoding="async">
 
             <div class="about-me-info">
                 {% for paragraph in paragraphs %}
