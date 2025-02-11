@@ -1,0 +1,80 @@
+backend:
+  name: github
+  repo: jlwalkerlg/sos-party-rental-11ty
+  branch: master
+
+local_backend: true
+
+logo_url: 'https://codestitch.app/frontend/images/logo.png'
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+editor:
+  preview: false
+
+collections:
+  - name: 'blog' # Used in routes, e.g., /admin/collections/blog
+    label: 'Blog' # Used in the UI
+    folder: 'public/blog/' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      # - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      # - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      # - { label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: menu
+    label: Menu
+    files:
+      - name: menu
+        label: Menu
+        file: public/_data/menu.json
+        fields:
+          - name: categories
+            label: Categories
+            widget: list
+            fields:
+              - name: name
+                label: Name
+                widget: string
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - name: name
+                    label: Name
+                    widget: string
+                  - name: description
+                    label: Description
+                    widget: string
+                  - name: price
+                    label: Price
+                    widget: string
+
+  - name: settings
+    label: Settings
+    files:
+      - name: website_settings
+        label: Website Settings
+        file: public/_data/settings.json
+        fields:
+          - { label: Site Name, name: site_name, widget: string }
+
+      - name: socials
+        label: Social Media Settings
+        file: public/_data/socials.json
+        fields:
+          - { label: Instagram, name: instagram, widget: string }
+
+  - name: pages_en
+    label: Pages (English)
+    files:
+      - name: our-story
+        label: Our Story
+        file: public/en/our-story.md
+        fields:
+          - { label: Heading, name: heading, widget: string }
