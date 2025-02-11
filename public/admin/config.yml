@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: jlwalkerlg/sos-party-rental-11ty
+  name: git-gateway
   branch: master
 
 local_backend: true
