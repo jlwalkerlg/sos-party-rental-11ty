@@ -7,6 +7,11 @@
           "name": "Bella Di Cerignola green olives (VE/GF)",
           "description": "Delicious authentic italian green olives",
           "price": "£4.00"
+        },
+        {
+          "name": "Garlic Bread (VE)",
+          "description": "Fresh and homemade garlic bread. Add mozzarella (V) for only £1.5 extra",
+          "price": "£6"
         }
       ]
     },
@@ -22,6 +27,16 @@
           "name": "Bufala",
           "description": "San Marzano DOP tomato sauce, parmesan, mozzarella di bufala, fresh basil and olive oil",
           "price": "£13.95"
+        }
+      ]
+    },
+    {
+      "name": "Specials",
+      "items": [
+        {
+          "name": "SAN VALENTINO!",
+          "description": "Red Dough, yellow datterino tomato base, salame Milano, mixed yellow and red tomatoes, basil, extra virgin oil and parmesan.",
+          "price": "£19.95"
         }
       ]
     }

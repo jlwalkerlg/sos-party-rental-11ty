@@ -9,6 +9,9 @@ logo_url: 'https://codestitch.app/frontend/images/logo.png'
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
+editor:
+  preview: false
+
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
@@ -23,6 +26,34 @@ collections:
       # - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       # - { label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: menu
+    label: Menu
+    files:
+      - name: menu
+        label: Menu
+        file: public/_data/menu.json
+        fields:
+          - name: categories
+            label: Categories
+            widget: list
+            fields:
+              - name: name
+                label: Name
+                widget: string
+              - name: items
+                label: Items
+                widget: list
+                fields:
+                  - name: name
+                    label: Name
+                    widget: string
+                  - name: description
+                    label: Description
+                    widget: string
+                  - name: price
+                    label: Price
+                    widget: string
 
   - name: settings
     label: Settings
