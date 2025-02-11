@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: jlwalkerlg/sos-party-rental-11ty
-  branch: decap-cms
+  branch: master
 
 local_backend: true
 
