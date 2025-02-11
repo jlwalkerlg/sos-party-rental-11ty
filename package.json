@@ -4,12 +4,16 @@
   "type": "module",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "decap": "decap-server"
   },
   "author": "",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^6.0.1",
     "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "decap-server": "^3.2.0"
   }
 }

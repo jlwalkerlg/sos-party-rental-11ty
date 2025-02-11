@@ -8,6 +8,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./public/fonts/')
   eleventyConfig.addPassthroughCopy('./public/images/')
   eleventyConfig.addPassthroughCopy('./public/**/*.{css,js}')
+  eleventyConfig.addPassthroughCopy('./public/admin/')
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
