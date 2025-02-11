@@ -5,6 +5,7 @@ backend:
 
 local_backend: true
 
+logo_url: 'https://codestitch.app/frontend/images/logo.png'
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
@@ -22,3 +23,17 @@ collections:
       # - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       # - { label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: settings
+    label: Settings
+    files:
+      - name: website_settings
+        label: Website Settings
+        file: public/_data/settings.json
+        fields:
+          - { label: Site Name, name: site_name, widget: string }
+      - name: socials
+        label: Social Media Settings
+        file: public/_data/socials.json
+        fields:
+          - { label: Instagram, name: instagram, widget: string }
