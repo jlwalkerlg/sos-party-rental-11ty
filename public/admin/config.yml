@@ -32,8 +32,18 @@ collections:
         file: public/_data/settings.json
         fields:
           - { label: Site Name, name: site_name, widget: string }
+
       - name: socials
         label: Social Media Settings
         file: public/_data/socials.json
         fields:
           - { label: Instagram, name: instagram, widget: string }
+
+  - name: pages_en
+    label: Pages (English)
+    files:
+      - name: our-story
+        label: Our Story
+        file: public/en/our-story.md
+        fields:
+          - { label: Heading, name: heading, widget: string }
