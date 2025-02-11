@@ -4,7 +4,7 @@ backend:
 
 local_backend: true
 
-logo_url: 'https://codestitch.app/frontend/images/logo.png'
+logo_url: https://sos-party-rental-11ty.netlify.app/img/sos-logo-93w.avif
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
