@@ -11,7 +11,7 @@ meta:
     Florida, special celebrations in Florida, unique events in Florida, event
     experts in Florida, event company Florida, wedding planning in Florida,
     event item rentals in Florida
-heading: Our Story
+heading: Our Story!
 img: Sandra, the owner of SOS Party Rental, and her husband, Alfredo, as event
   organizers
 paragraphs:
